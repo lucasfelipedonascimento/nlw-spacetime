@@ -1,5 +1,6 @@
 # Descrição
 
+`server.ts`
 Este código é um exemplo básico de um servidor HTTP usando o framework [Fastify](https://www.fastify.io/), que retorna dados de usuários armazenados em um banco de dados utilizando a ORM [Prisma](https://www.prisma.io/).
 
 # Instalação e Execução

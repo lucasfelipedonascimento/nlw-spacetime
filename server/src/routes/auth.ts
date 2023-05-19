@@ -4,7 +4,6 @@ import axios from "axios";
 import { prisma } from "./lib/prisma";
 
 export async function authRoutes(app: FastifyInstance) {
-  console.log('Entrei na função authRoutes');
   try {
     app.post('/register', async (request) => {
       const bodySchema = z.object({
@@ -82,14 +81,11 @@ export async function authRoutes(app: FastifyInstance) {
           expiresIn: '30 days',
         },
       )
-
-      console.log('token', token);
       
       return {
         token,
       }
     })
-    console.log('Terminei a requisição')
   } catch (error) {
     console.log(error);
   }

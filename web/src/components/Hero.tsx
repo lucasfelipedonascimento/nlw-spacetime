@@ -20,8 +20,8 @@ export default function Hero() {
       </div>
 
       <Link
-        className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-600"
         href="/memories/new"
+        className="hover:bg-green-00 inline-block cursor-pointer rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black"
       >
         CADASTRAR LEMBRANÇAS
       </Link>
